@@ -1,13 +1,16 @@
-import { useState } from 'react'
+import React,{ useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import  "./smartTips.js";
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    {/* 基于Web Components 的最小实现！ */}
+    {React.createElement("smart-tips")}
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
